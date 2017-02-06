@@ -3,6 +3,10 @@ body {
   width: 100%;
   background-color: lightgray;
 }
+button {  
+  font-size: 24px;
+  font-family: monospace;
+}
 .parent {
   height: 100%;
   width: 100%;
@@ -12,21 +16,22 @@ body {
   flex-direction: column;
 }
 .topNav {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color: white;
   border-radius: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: all .5s;
+  position: relative;
 }
 .topNavRotate {
   transform: rotate(90deg);
 }
 .num {
-  text-decoration: none;
-  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
 }
 #mainPartClosed {
   margin-top: 10px;
@@ -35,17 +40,72 @@ body {
   height: 0px;
   background-color: white;
   transition: all .5s;
+  position: relative;
 }
-.mainPartOpened {
-  margin-top: 10px;
-  border-radius: 12px;
-  width: 300px;
-  height: 400px;
-  background-color: white;
-  transition: all .5s;
+.buttons-container {
+  width: 70%;
+  height: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.function-buttons {
+  width: 20%;
+  height: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
 }
 #topImg {
+  left: 10px;
   width: 40px;
   height: 40px;
   transition: all .5s;
+  position: absolute;
+}
+.fun {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+#add {
+  height: 130px;
+}
+#clear-button {
+  height: 76px;
+  width: 100%;
+}
+.clear {
+  width: 92%;
+  height: 20%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: 0;
+  padding: 14px;
+}
+#display {
+  height: 34px;
+  width: 230px;
+  background-color: lightgray;
+  position: absolute;
+  right: 11px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: monospace;
+  font-size: 24px;
 }
